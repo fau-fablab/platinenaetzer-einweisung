@@ -3,7 +3,10 @@ Platinenätzer Einweisung
 
 Einweisung des [FAU FabLab](https://fablab.fau.de) in die [Platinenfertigung](https://fablab.fau.de/tool/platinenfertigung).
 
-Die neueste Version der Einweisung aus [github](https://github.com/fau-fablab/platinenaetzer-einweisung) ist als PDF unter https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Einweisung_Platinenätzer.pdf abrufbar.
+Die neueste Version aus [github](https://github.com/fau-fablab/platinenaetzer-einweisung) ist als PDF abrufbar:
+
+- [Einweisung](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Einweisung_Platinenätzer.pdf)
+- [Einweisungsliste](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Einweisungsliste_Platinenätzer.pdf)
 
 auschecken
 ----------
