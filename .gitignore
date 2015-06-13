@@ -12,6 +12,7 @@ revision.tex
 *.fls
 *.out
 *.toc
+*.stc*
 
 ## Intermediate documents:
 *.dvi
