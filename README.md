@@ -15,6 +15,7 @@ git clone --recursive git@github.com:fau-fablab/platinenaetzer-einweisung.git
 Technische Details zum Buildserver siehe auf macgyver `/home/buildserver/README`
 
 [![Build Status](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/status.svg)](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/)
+[![TODOs](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/status-todos.svg)](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/)
 
 Lizenz
 ------
