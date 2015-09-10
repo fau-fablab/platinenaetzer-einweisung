@@ -1,2 +1,2 @@
-TARGET=Einweisung_Platinenätzer Einweisungsliste_Platinenätzer
+TARGET=Einweisung_Platinenaetzer Einweisungsliste_Platinenaetzer
 include fablab-document/Makefile.include
