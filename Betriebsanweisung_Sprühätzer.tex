@@ -1,0 +1,116 @@
+\documentclass[fontsize=9pt]{scrartcl}
+\pagestyle{empty}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{a4paper, top=15mm, left=20mm, right=20mm, bottom=15mm, headsep=0mm, footskip=0mm}
+
+\usepackage{tikz}
+\makeatletter
+\setkomafont{section}{\color{white}
+    \bfseries\Large
+    \begin{tikzpicture}[overlay]
+        \draw[blue,fill=blue] (-1.5cm,-6pt) rectangle (\paperwidth, 13pt)
+        (\linewidth,16.4pt);
+	\end{tikzpicture}}
+
+\usepackage{background}
+\backgroundsetup{
+	scale=1,	%% Größe (so lassen)
+	angle=0,	%% Ausrichtung (Winkel)
+	opacity=1,  %% Deckkraft
+	contents={\includegraphics[width=\paperwidth,height=\paperheight]{img/blauer_rand.pdf}}
+}
+
+\newenvironment{smallitemize}{\begin{itemize}\itemsep -3pt}{\end{itemize}}
+
+
+
+\begin{document}
+
+% blauer Rand
+
+\begin{center}
+	\LARGE{Betriebsanweisung \enquote{Sprühätzer}}
+\end{center}
+
+
+%\section{\bgvbox{Anwendungsbereich}}
+%\section{Anwendungsbereich}
+\begin{center}
+	Diese Betriebsanweisung fasst die wichtigsten Gefahren und Regeln zusammen.\\
+	Für die Bedienung des Sprühätzers ist eine unterschriebene Einweisung für die Platinenfertigung nötig.\\
+	Diese Anweisung ist nur zusätzlich zu sehen!\\
+\end{center}
+
+\section{Gefahren für Mensch und Umwelt}
+
+\begin{smallitemize}
+	\item Benetzung der Haut mit Ätzmittel Eisen(III)-Chlorid.
+	\item Sich schneiden, stechen usw. an Werkzeug, Werkstück, Spänen.
+	\item Intensiver Hautkontakt mit Kühlschmierstoff kann zu Hautschäden führen.
+	\item Gefahr von rotbraunen Flecken auf der Kleidung.
+\end{smallitemize}
+
+\section{Schutzmaßnahmen und Verhaltensregeln}
+
+\begin{itemize}
+	\item Generell:
+	\begin{smallitemize}
+		\item Unbedingt Schutzbrille tragen, nach Möglichkeit Handschuhe tragen.
+		\item Sprühfunktion am Gerät nur bei geschlossenem Deckel einschalten.
+		\item Vor Verwendung Flüssigkeitsstand kontrollieren: Flüssigkeit muss bis zur Unterkante der Trennung zwischen Ätzwanne und Sprühraum stehen.
+		\item Bei Flüssigkeitsmangel mit Leitungswasser nachfüllen.
+		\item Die Sprühätzung ist deutlich schneller als die Ätzküvette, Ätzergebnis alle 30s kontrollieren.
+		
+	\end{smallitemize}
+	\item Im Betrieb:
+	\begin{smallitemize}
+		\item Anlage NIE im Betrieb öffnen, Ätzmittel spritzt sofort heraus.
+		\item Für Doppelseitige Ätzung unbedingt beide Sprüher einschalten.
+		\item An der Platine an zwei gegenüberliegenden Seiten einen 2mm breiten Streifen zur Klemmung freilassen.
+		\item 
+		
+	\end{smallitemize}
+	\item Arbeitsanweisung:
+	\begin{smallitemize}
+		\item 
+		\item 
+		\item 
+		\item 
+		\item 
+		\item 
+		\end{smallitemize}
+\end{itemize}
+
+\section{Verhalten bei Störungen und im Gefahrenfall}
+\begin{smallitemize}
+	\item Bei Schäden oder Störungen an der Maschine: Ausschalten und Betreuer informieren. Schadensmeldung sichtbar an der Maschine anbringen.
+	\item evtl. ausgelaufens Ätzmittel mit Papiertüchern aufnehmen und feucht nachwischen.
+	\item Schäden nur vom Fachmann beseitigen lassen.
+\end{smallitemize}
+
+\section{Verhalten bei Unfällen - Erste Hilfe}
+\begin{smallitemize}
+	\item Sprühfunktion abschalten. Heizung abschalten.
+	\item Ätzmittelspritzer sofort mit viel Wasser abwaschen.
+	\item Betreuer informieren. Gegebenenfalls René rufen.
+	\item Verletzten betreuen.
+\end{smallitemize}
+
+\section{Instandhaltung, Entsorgung}
+\begin{smallitemize}
+	\item Nach Abschluss der Ätzung Platine unter fließendem Wasser abspühlen.
+	\item Deckel wieder auflegen 
+		\vspace{5mm}
+	\item Für die Instandhaltung ist zuständig:...............................
+\end{smallitemize}
+\vfill
+Copyright:  Diese Seite basiert auf einer Vorlage der BGHM, deshalb ist sie NICHT unter CC-Lizenz veröffentlicht.
+\end{document} 
