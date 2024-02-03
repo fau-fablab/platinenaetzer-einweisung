@@ -40,7 +40,7 @@ Platinenätzer und Belichter dürfen erst nach einer Einweisung durch einen Betr
 \begin{itemize}
 \item Im Zweifelsfall Anleitung beachten
 \item Belichter nur geschlossen betreiben
-\item Solange das Ätzgerät geöffnet ist, Belüftung ausschalten, um Spritzer zu vermeiden
+\item Solange das Ätzgerät geöffnet ist, müssen die Motoren zum Sprühen des Ätzmittels ausgeschaltet sein, um Spritzer zu vermeiden
 \item \textbf{Schutzbrille tragen}, solange mit der Platine hantiert wird oder der Ätzer offen ist
 \item Beim Arbeiten mit Chemikalien:
 
@@ -56,7 +56,7 @@ Platinenätzer und Belichter dürfen erst nach einer Einweisung durch einen Betr
 \begin{itemize}
 \item Bungard BEL 160×100×1,5mm Photoplatine mit 35µm Kupfer sowie Photolack und Schutzfolie
 \item Natriumhydroxid Lösung (10g auf 1l Wasser)
-\item Natriumpersulfat Lösung (400g auf eine Füllung von Reichelt ÄTZGERÄT 1, also ca. 1,75l Wasser)
+\item Natriumpersulfat Lösung (xxxg auf eine Füllung von ÄTZGERÄT 1, also ca. yl Wasser)
 \item Bungard SurTin chemische Verzinnungslösung, fertig angesetzt
 \end{itemize}
 \section{Layout}
@@ -164,25 +164,36 @@ Beim Entwickeln wird der belichtete Photolack chemisch umgewandelt und abgewasch
 
 \subsection{Ätzen}
 \label{sec:aetzen}
-Beim Ätzen wird die Kupferschicht an den belichteten und entwickelten Stellen entfernt. Leiterbahnen sind durch Photolack geschützt.
+Beim Ätzen wird die Kupferschicht an den belichteten und entwickelten Stellen entfernt. Leiterbahnen sind durch Photolack geschützt. Bei unserem Gerät handelt es sich um eine Sprühätzanlage, d.h. die Platinen werden mit dem Ätzmittel besprüht.
 
 \begin{itemize}
-\item Warten, bis Ätzbad 40°C erreicht hat
+\item Vor Inbetriebnahme: Überprüfen, ob genug Ätzmittel vorhanden ist. Die Bodenplatte sollte ca. 5mm mit dem Ätzmittel bedeckt sein (rote Markierung am Gerät). Falls das nicht der Fall ist, Betreuer benachrichtigen und auf keinen Fall einschalten!
+\item Falls genug Ätzmittel vorhanden ist:
+\begin{itemize}
+\item Einschalten:  Netzstrom (Steckerleiste hinter dem Ätzer) und Heizung (Kippschalter an der Oberseite des Bedienelementes) anschalten.
+\item Ein paar Sekunden warten, bis der Bildschirm in die Hauptansicht wechselt (entweder die aktuelle Temperatur (tcXY, tc = current temperature, XY=Temperatur in °C) oder die Ätzzeit (4 stellige Zahl))
+\end{itemize}
+\item In der Hauptansicht lässt sich durch Drücken der Up- und Down-Tasten der Timer einstellen (Anzeige Minuten : Sekunden), mit dem sich die Dauer des Ätzvorgangs einstellen lässt. (Standardeinstellung: 10min)
+\item Warten, bis die Solltemperatur erreicht ist (+- 10°C). Dies erfordert nach dem Einschalten, wenn das Ätzbad Raumtemperatur hat, etwa 30-45min. Die aktuelle Temperatur sieht man, wenn man so lange auf Menu drückt, bis tcXY angezeigt wird. Um wieder zur Hauptansicht zu kommen, einfach ein paar Sekunden warten.
 \item Schutzbrille aufsetzen
-\item Ätzgerät ausschalten, damit keine Spritzer den Tisch versiffen
-\item Platinenhalter aus Ätzbad entnehmen, diesen mit Wasser abspülen, beim Transport zum Waschbecken bitte eine Schale drunter halten, damit nichts auf den Boden tropft
-\item Platine mit der Photoseite nach vorne (so, dass man beim Ätzen auch etwas sieht) in Halter klemmen, falls die Breite nicht passt, Halterarm verschieben. Wenn der Halterarm schwergängig ist, Schraube etwas lösen und so lassen.
-\item Halter in das Ätzbad stellen, Gerät wieder anschalten
+\item Platine in den dafür vorgesehenen Halter einlegen und Halter wieder ins Ätzgerät stellen.
 \item Jetzt darf die Schutzbrille wieder abgenommen werden.
+\item Mit der Start/Stopp-Taste wird der Ätzvorgang gestartet beziehungsweise wieder beendet. (Timer resetted sich beim Beenden auf den vorher eingestellten Wert). Nach Ablauf des Timers schalten sich die Motoren ebenfalls automatisch ab (Die Heizung bleibt allerdings an!).
+
+\item Empfohlene Einstellungen:
+\begin{itemize}
+\item Ätztemperatur: 45°C-50°C
+\item Zeitdauer: ca. 10min
+\end{itemize}
+
 \item Ätzvorgang regelmäßig beobachten: Erst werden die zu ätzenden Stellen rosa (Kupferschicht wird dünner), schließlich werden sie grünlich und Licht kann durch die Platine durchscheinen (Kupferschicht ist weg).
 \item Unterbrechen ist möglich, wenn man die Platine herausnimmt und gründlich abwäscht.
 \item Sobald alle Stellen weggeätzt sind, sich nichts mehr tut, oder Leiterbahnen angefressen werden, den Ätzvorgang beenden:
 \begin{itemize}
  \item Schutzbrille aufsetzen
- \item Ätzgerät ausschalten
+ \item Ätzgerät ausschalten: Motoren (Start/Stopp-Taste) und Heizung (Kippschalter)
  \item Platinenhalter mit Platine entnehmen, mit Wasser abspülen
 \end{itemize}
- 
 \end{itemize}
 
 \subsection{Entschichten}
@@ -349,6 +360,7 @@ Genau wie bei einseitigen Platinen:
 \section{Wartungsarbeiten (nur Betreuer)}
 
 \subsection{Wechseln der Ätzlösung (nur Betreuer)}
+TODO: Anpassen an neuen Ätzer
 \begin{itemize}
 \item Dies ist normalerweise nicht erforderlich, und nur Betreuern erlaubt, um Verschwendung zu vermeiden.
 \item Die Ätzlösung ist verbraucht, wenn sie deutlich blau gefärbt ist \emph{und} das Ätzen sehr lange dauert \emph{und} die Ergebnisse nicht mehr zufriedenstellend sind (Unterätzung am Rand von Leiterbahnen, kein schnelles Anätzen blanker Kupferstellen).
@@ -365,6 +377,18 @@ Genau wie bei einseitigen Platinen:
 \item Mit dem Becherglas Wasser auffüllen, es etwa 1cm unter dem Ablaufrohr steht
 \item Einschalten, warten, ab und zu mit Glas- oder Plastikstab rühren
 \item Sobald keine festen Teilchen mehr zu sehen sind und die Flüssigkeit klar aussieht, kann der Ätzer wieder normal benutzt werden. Eine eventuelle dunkelgraue Färbung der Flüssigkeit kann dabei ignoriert werden, sie verschwindet nach den ersten Benutzungen.
+\end{itemize}
+
+\subsection{Einstellungen des Sprühätzers (nur Betreuer)}
+\begin{itemize}
+\item Eine Änderung der Einstellungen sollte normalerweise nicht nötig sein und wird hier nur der Vollständigkeit halber aufgeführt, falls bei der Benutzung der Ätzanlage etwas verstellt wurde.
+\item Mit der Menu-Taste kann man durch die einstellbaren Parameter iterieren. Mit den Tasten Up und Down kann man dabei Einstellungen verändern. Dabei gibt es:
+\begin{itemize}
+\item tc = akuelle Temperatur des Ätzbades: Lässt sich mit Up und Down Tasten auf TcON (= Solltemperaturanzeige an) und TcOF (=Solltemperaturanzeige aus) einstellen $\Rightarrow$ Bitte immer auf TcON lassen! Diese Anzeige ist auf dem Hauptbildschirm anstelle der Timerzeit sichtbar, solange der Ätzer aufheizt.
+\item ts = Solltemperatur des Ätzbades (Sollte auf 50°C eingestellt sein)
+\item Die restlichen Menüpunkte bitte so lassen wie sie sind, d.h. einfach durch mehrmaliges Drücken der Menu-Taste überspringen.
+\item Wenn man in einem beliebigen Menüpunkt ein paar Sekunden wartet, landet man wieder bei der Hauptansicht (Anzeige der Ätzzeit und der aktuellen Temperatur tcXY im Wechsel, falls die Solltemperatur noch nicht erreicht ist oder nur die Zeit, falls die Solltemperatur erreicht ist) 
+\end{itemize}
 \end{itemize}
 
 \newpage
