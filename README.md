@@ -7,6 +7,7 @@ Die neueste Version aus [github](https://github.com/fau-fablab/platinenaetzer-ei
 
 - [Einweisung](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Einweisung_Platinenaetzer.pdf)
 - [Einweisungsliste](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Einweisungsliste_Platinenaetzer.pdf)
+- [Betriebsanweisung Sprühätzer](https://user.fablab.fau.de/~buildserver/platinenaetzer-einweisung/Betriebsanweisung_Spruehaetzer.pdf) (Entwurf, noch nicht freigegeben)
 
 auschecken
 ----------

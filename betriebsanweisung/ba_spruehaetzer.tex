@@ -1,0 +1,84 @@
+% =====================================================================
+%  Betriebsanweisung Sprühätzer (Platinenfertigung)
+%  Eigenes PDF: Betriebsanweisung_Spruehaetzer.tex
+%  Layout: fablab-document/fablab-ba.sty
+%  UNFERTIG: muss erst fertiggestellt und freigegeben werden (siehe TODO).
+%  Für das Ätzmittel Eisen(III)-chlorid ist zusätzlich eine
+%  Gefahrstoff-Betriebsanweisung (BA-GS-..) zu prüfen.
+%  Inhalt basiert auf einer Vorlage der BGHM und steht deshalb NICHT unter
+%  CC-Lizenz.
+% =====================================================================
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{TODO:} #1}}
+\BAsetup{
+  typ=maschine,
+  titel={Sprühätzer für die Platinenfertigung},
+  taetigkeit={Ätzen von Platinen mit Eisen(III)-chlorid},
+  nummer=BA-PA-01,
+  verantwortlich={Name der verantwortlichen Person},
+  entwurf,
+  hinweis={Diese Seite basiert auf einer Vorlage der BGHM, deshalb ist sie NICHT unter CC-Lizenz veröffentlicht.},
+}
+
+\BAkopf
+
+\BAblock{ANWENDUNGSBEREICH}{M002}{%
+  \begin{itemize}
+    \item Diese Betriebsanweisung fasst die wichtigsten Gefahren und Regeln zusammen.
+    \item Für die Bedienung des Sprühätzers ist eine unterschriebene Einweisung für die
+          Platinenfertigung mit Sprühätzer nötig.
+    \item Diese Anweisung ist nur zusätzlich zu sehen!
+  \end{itemize}}
+
+\BAblock{GEFAHREN FÜR MENSCH UND UMWELT}{W023}{%
+  \begin{itemize}
+    \item Benetzung der Haut mit Ätzmittel Eisen(III)-Chlorid.
+    \item Verunreinigung der Umgebung mit Ätzmittel.
+    \item Gefahr von rotbraunen Flecken auf Haut und Kleidung.
+  \end{itemize}}
+
+\BAblock{SCHUTZMASSNAHMEN UND VERHALTENSREGELN}{M004,M009}{%
+  \textbf{Generell:}
+  \begin{itemize}
+    \item Unbedingt Schutzbrille tragen, nach Möglichkeit Handschuhe tragen.
+          \TODO{Handschuhe spezifizieren -- beliebige Einwegdinger gehen sicher nicht.}
+    \item Sprühfunktion am Gerät nur bei geschlossenem Deckel einschalten. Vor dem Öffnen ausschalten.
+    \item Vor Verwendung Flüssigkeitsstand kontrollieren: Flüssigkeit muss bis zur Unterkante der
+          Trennung zwischen Ätzwanne und Sprühraum stehen.
+    \item Bei Flüssigkeitsmangel mit Leitungswasser nachfüllen.
+    \item Die Sprühätzung ist deutlich schneller als die Ätzküvette, Ätzergebnis alle 30\,s kontrollieren.
+  \end{itemize}
+  \textbf{Im Betrieb:}
+  \begin{itemize}
+    \item Anlage NIE im Betrieb öffnen, Ätzmittel spritzt sofort heraus.
+    \item Für doppelseitige Ätzung unbedingt beide Sprüher einschalten.
+    \item An der Platine an zwei gegenüberliegenden Seiten einen 2\,mm breiten Streifen zur Klemmung freilassen.
+  \end{itemize}
+  \textbf{Arbeitsanweisung:}
+  \begin{itemize}
+    \item Normalerweise dauert das Ätzen einer Platine zwei Minuten.
+    \item \TODO{Arbeitsanweisung vervollständigen.}
+  \end{itemize}}
+
+\BAblock{VERHALTEN BEI STÖRUNGEN UND IM GEFAHRENFALL}{W001}{%
+  \begin{itemize}
+    \item Bei Schäden oder Störungen an der Maschine: Ausschalten und Betreuer informieren.
+          Schadensmeldung sichtbar an der Maschine anbringen.
+    \item Evtl.\ ausgelaufenes Ätzmittel mit Papiertüchern aufnehmen und feucht nachwischen.
+    \item Schäden nur vom Fachmann beseitigen lassen.
+  \end{itemize}}
+
+\BAblock{VERHALTEN BEI UNFÄLLEN – ERSTE HILFE}{E003,E011}{%
+  \begin{itemize}
+    \item Sprühfunktion abschalten. Heizung abschalten.
+    \item Ätzmittelspritzer sofort mit viel Wasser abwaschen.
+    \item Augenspülflasche: Beim Waschbecken. \TODO{Standardsatz zu deren Benutzung.}
+    \item Betreuer informieren. Gegebenenfalls Rettungsdienst rufen.
+    \item Verletzten betreuen.
+  \end{itemize}}
+
+\BAletzterblock{INSTANDHALTUNG, ENTSORGUNG}{}{%
+  \begin{itemize}
+    \item Nach Abschluss der Ätzung Platine unter fließendem Wasser abspülen.
+    \item Deckel wieder auflegen.
+    \item Für die Instandhaltung ist zuständig: \rule{55mm}{0.4pt}
+  \end{itemize}}
