@@ -25,14 +25,13 @@
 \title{Einweisung Platinenätzer}
 
 \begin{document}
- % Hinweise an Package minitoc, doch bitte irgendwas zu generieren - wird für späteres \secttoc benötigt
-\dosecttoc
-\faketableofcontents
+\dosecttoc % Inhaltsübersicht je Section (\secttoc), das Inhaltsverzeichnis folgt nach Kapitel 1
 \mtcsettitle{secttoc}{Arbeitsschritte}
 \mtcsettitlefont{secttoc}{\large \sffamily \bfseries}
 \mtcsetfont{secttoc}{subsection}{\sffamily}
 % \mtcset
 % hier geht das eigentliche Dokument los
+\maketitle
 
 Platinenätzer und Belichter dürfen erst nach einer Einweisung durch einen Betreuer verwen\-det werden. Bei Interesse einfach nachfragen, wir erklären alles. Nachdem ihr es erfolgreich gemacht habt, unterschreibt ihr die Einweisung und dann dürft ihr auch alleine ran.
 
@@ -52,6 +51,13 @@ Platinenätzer und Belichter dürfen erst nach einer Einweisung durch einen Betr
 \item Bei Augenkontakt: Augen bei geöffnetem Lidspalt mehrere Minuten unter fließendem Wasser abspülen und Arzt konsultieren.
 \end{itemize}
 \end{itemize}
+
+\newpage
+\renewcommand{\contentsname}{Inhaltsverzeichnis / Arbeitsablauf}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+
 \section{Verwendete Materialien}
 \begin{itemize}
 \item Bungard BEL 160×100×1,5mm Photoplatine mit 35µm Kupfer sowie Photolack und Schutzfolie
